@@ -18,6 +18,13 @@ catress file1.txt file2.txt
 
 ## Benchmark
 
-![Catress benchmark](assets/benchmark.png)
+Tested on:
+- Intel Core i5-11400F (6C/12T)
+- 16GB RAM
 
-It's slower than the good old 'cat', tested on a json file with 15k lines.
+| command                  | time        |
+| ------------------------ | ----------- |
+| `cat test/test.json`     | 24.226s     |
+| `catress test/test.json` | **21.684s** |
+
+catress won the benchmark by 3 seconds.

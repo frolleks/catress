@@ -37,7 +37,7 @@ fn main() -> Result<(), Box<dyn Error>> {
             let contents =
                 fs::read_to_string(&file_path).map_err(|err| CustomError::new(&err.to_string()))?;
 
-            println!("Contents of file '{}':\n{}", file_path, contents);
+            println!("{}\n", contents);
         }
     }
 
